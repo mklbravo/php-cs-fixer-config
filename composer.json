@@ -1,0 +1,42 @@
+{
+  "name": "mklbravo/php-cs-fixer-config",
+  "type": "library",
+  "description": "Provides rule sets for friendsofphp/php-cs-fixer",
+  "homepage": "https://github.com/mklbravo/php-cs-fixer-config.git",
+  "version": "0.1.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mikel Bravo",
+      "email": "me@mklbravo.net"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "friendsofphp/php-cs-fixer": "^2.16"
+  },
+  "require-dev": {
+    "ergebnis/composer-normalize": "^2.3",
+    "phpunit/phpunit": "^8.0"
+  },
+  "config": {
+    "platform": {
+      "php": "7.2"
+    },
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "mklbravo\\PhpCsFixer\\Config\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "mklbravo\\PhpCsFixer\\Config\\Test\\": "test"
+    }
+  },
+  "support": {
+    "source": "https://github.com/mklbravo/php-cs-fixer-config.git"
+  }
+}
