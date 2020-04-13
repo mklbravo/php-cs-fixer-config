@@ -35,6 +35,9 @@
       "mklbravo\\PhpCsFixer\\Config\\Test\\": "test"
     }
   },
+  "scripts": {
+    "phpunit": "vendor/bin/phpunit --configuration=test/Unit/phpunit.xml"
+  },
   "support": {
     "source": "https://github.com/mklbravo/php-cs-fixer-config.git"
   }
