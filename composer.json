@@ -3,7 +3,6 @@
   "type": "library",
   "description": "Provides rule sets for friendsofphp/php-cs-fixer",
   "homepage": "https://github.com/mklbravo/php-cs-fixer-config.git",
-  "version": "0.1.0",
   "license": "MIT",
   "authors": [
     {
