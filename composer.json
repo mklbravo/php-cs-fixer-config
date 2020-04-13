@@ -3,7 +3,6 @@
   "type": "library",
   "description": "Provides rule sets for friendsofphp/php-cs-fixer",
   "homepage": "https://github.com/mklbravo/php-cs-fixer-config.git",
-  "version": "0.1.0",
   "license": "MIT",
   "authors": [
     {
@@ -35,6 +34,10 @@
     "psr-4": {
       "mklbravo\\PhpCsFixer\\Config\\Test\\": "test"
     }
+  },
+  "scripts": {
+    "phpunit": "vendor/bin/phpunit --configuration=test/Unit/phpunit.xml",
+    "cs" : "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer/.php_cs --diff --verbose"
   },
   "support": {
     "source": "https://github.com/mklbravo/php-cs-fixer-config.git"
