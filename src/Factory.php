@@ -25,8 +25,6 @@ final class Factory {
             $overrideRules
         ));
 
-        $config->getFinder()->in(__DIR__ . '/..');
-
         return $config;
     }
 }
