@@ -16,8 +16,5 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress --no-suggest
 
-    - name: CS Fixer
-      run: composer run-script cs
-
     - name: Run test suite
       run: composer run-script phpunit
