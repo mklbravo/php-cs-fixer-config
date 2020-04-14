@@ -36,8 +36,8 @@
     }
   },
   "scripts": {
-    "phpunit": "vendor/bin/phpunit --configuration=test/Unit/phpunit.xml",
-    "cs" : "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer/.php_cs --diff --verbose"
+    "cs": "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer/.php_cs --diff --verbose",
+    "phpunit": "vendor/bin/phpunit --configuration=test/Unit/phpunit.xml"
   },
   "support": {
     "source": "https://github.com/mklbravo/php-cs-fixer-config.git"
