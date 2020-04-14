@@ -4,6 +4,19 @@ Inspired by [`ergebnis/php-cs-fixer-config`](https://github.com/ergebnis/php-cs-
 
 ## Installation
 
+Since the repository is not in Packagist, add it to composer.json:
+
+```json
+{
+  "repositories": [
+    {
+      "type": "vcs",
+      "url":  "git@github.com:mklbravo/php-cs-fixer-config.git"
+    }
+  ]
+}
+```
+
 Run
 
 ```sh
@@ -23,6 +36,8 @@ use mklbravo\PhpCsFixer\Config;
 
 $ruleSet = new Config\RuleSet\PHP71();
 $config = Config\Factory::fromRuleSet($ruleSet);
+
+$config->getFinder()->in(__DIR__ . '/../src');
 
 return $config;
 ```
@@ -46,6 +61,8 @@ EOF;
 
 $ruleSet = new Config\RuleSet\PHP71($header);
 $config = Config\Factory::fromRuleSet($ruleSet);
+
+$config->getFinder()->in(__DIR__ . '/../src');
 
 return $config;
 ```
@@ -73,11 +90,13 @@ file headers will be added to PHP files, for example:
 use mklbravo\PhpCsFixer\Config;
 
 
-$ruleSet = new Config\RuleSet\PHP71($header);
+$ruleSet = new Config\RuleSet\PHP71();
 $config = Config\Factory::fromRuleSet($ruleSet, [
     'mb_str_functions' => false,
     'strict_comparison' => false,
 ]);
+
+$config->getFinder()->in(__DIR__ . '/../src');
 
 return $config;
 ```
