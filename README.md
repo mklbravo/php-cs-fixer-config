@@ -4,19 +4,6 @@ Inspired by [`ergebnis/php-cs-fixer-config`](https://github.com/ergebnis/php-cs-
 
 ## Installation
 
-Since the repository is not in Packagist, add it to composer.json:
-
-```json
-{
-  "repositories": [
-    {
-      "type": "vcs",
-      "url":  "git@github.com:mklbravo/php-cs-fixer-config.git"
-    }
-  ]
-}
-```
-
 Run
 
 ```sh
