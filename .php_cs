@@ -16,6 +16,7 @@ EOF;
 $ruleSet = new Config\RuleSet\PHP71($header);
 $config = Config\Factory::fromRuleSet($ruleSet);
 
-$config->getFinder()->in(__DIR__ . '/../src');
+$config->getFinder()->in('./src');
+
 
 return $config;

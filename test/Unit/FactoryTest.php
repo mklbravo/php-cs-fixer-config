@@ -47,7 +47,6 @@ final class FactoryTest extends Framework\TestCase {
         self::assertTrue($config->getRiskyAllowed());
         self::assertSame($ruleSetName, $config->getName());
         self::assertSame($ruleSetRules, $config->getRules());
-        self::assertSame('.php-cs-fixer/.php_cs.cache', $config->getCacheFile());
     }
 
     public function testFromRuleSetCreatesConfigWithOverrideRules(): void {
@@ -82,7 +81,6 @@ final class FactoryTest extends Framework\TestCase {
         self::assertTrue($config->getRiskyAllowed());
         self::assertSame($ruleSetName, $config->getName());
         self::assertSame(\array_merge($ruleSetRules, $ruleSetOverrideRules), $config->getRules());
-        self::assertSame('.php-cs-fixer/.php_cs.cache', $config->getCacheFile());
     }
 
     public function testIsFinal(): void {

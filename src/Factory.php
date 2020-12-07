@@ -19,7 +19,6 @@ final class Factory {
     public static function fromRuleSet(Interfaces\RuleSet $ruleSet, array $overrideRules = []): Config {
         $config = new Config($ruleSet->getName());
         $config->setRiskyAllowed(true);
-        $config->setCacheFile('.php-cs-fixer/.php_cs.cache');
         $config->setRules(\array_merge(
             $ruleSet->getRules(),
             $overrideRules
