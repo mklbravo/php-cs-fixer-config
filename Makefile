@@ -6,7 +6,7 @@ it: cs test
 # 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-text
 
 cs: vendor
-	vendor/bin/php-cs-fixer fix --config=.php-cs-fixer/.php_cs --diff --verbose
+	vendor/bin/php-cs-fixer fix --diff --verbose
 
 test: vendor
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
